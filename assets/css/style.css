@@ -1,4 +1,5 @@
 
+/*Body Css*/
 body{
     background-color: beige;
     color:rgb(41, 41, 29);
@@ -7,6 +8,7 @@ body{
     
 }
 
+/*Header Css*/
 .header{
 
     border-radius: 25px;
@@ -18,6 +20,7 @@ body{
     color: rgb(20, 4, 86);
 }
 
+/*Footer Css*/
 .footer{
 
     border-radius: 25px;
@@ -31,10 +34,12 @@ body{
     font-family: cursive, sans-serif;
 }
 
+/*Buttons Css*/
 .choosebtns{
     background-color:antiquewhite;
 }
 
+/*Main Div Css*/
 #gamespot{
     font-family: cursive, sans-serif;
     border:2px solid;
