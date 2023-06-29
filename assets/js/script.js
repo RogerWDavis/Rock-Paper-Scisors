@@ -106,7 +106,7 @@ function checkWinner() {
     } else if (maschine == "Lizard") {
         return (player == "Scissors") ? "You win!" : "You lose!";
     } else if (maschine == "Lizard") {
-        return (player == "rock") ? "You win!" : "You lose!";
+        return (player == "Rock") ? "You win!" : "You lose!";
     } else if (maschine == "Spock") {
         return (player == "Paper") ? "You win!" : "You lose!";
     } else if (maschine == "Spock") {

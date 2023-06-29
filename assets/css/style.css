@@ -1,12 +1,42 @@
 
+body{
+    background-color: beige;
+    
+}
+
+.header{
+
+    border-radius: 25px;
+    text-align: center;
+    height:auto;
+    width:100%;
+    background-color: lightblue;
+}
+
+.footer{
+
+    border-radius: 25px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: auto;
+    text-align: center;
+    color:black;
+    background-color:lightblue;
+}
+
 #gamespot{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border:2px solid;
     border-radius: 25px;
     padding: 10px;
+    position: absolute;
+    top:30%;
     background-color: lightblue;
     text-align: center;
     width:100%;
+    height:auto;
+    left: 0;
 }
 
 #playerspeak{
