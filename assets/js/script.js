@@ -43,7 +43,7 @@ document.getElementById('scissors').onclick = function buttonClick3(event) {
 
 //buttonclick function lizard
 document.getElementById('lizard').onclick = function buttonClick4(event) {
-    player = lizard.textContent;
+    player = lizardBtn.textContent;
     maschineTurn();
     playerSpeak.innerHTML = "Player:" + player;
     maschineSpeak.innerHTML = "Maschine:" + maschine;
