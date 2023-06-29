@@ -10,55 +10,56 @@ let scissorsBtn = document.getElementById("scissors");
 let lizardBtn = document.getElementById("lizard");
 let spockBtn = document.getElementById("spock");
 
-console.log(rockBtn);
-
-
 //variables for buttonClick functions
 let player;
 let maschine;
 
+//buttonclick function rock
 document.getElementById('rock').onclick = function buttonClick1(event) {
     player = rockBtn.textContent;
     maschineTurn();
     playerSpeak.innerHTML = "Player:" + player;
     maschineSpeak.innerHTML = "Maschine:" + maschine;
     resultSpeak.innerHTML = "Result:" + checkWinner();
-}
+};
 
-
+//buttonclick function paper
 document.getElementById('paper').onclick = function buttonClick2(event) {
     player = paperBtn.textContent;
     maschineTurn();
     playerSpeak.innerHTML = "Player:" + player;
     maschineSpeak.innerHTML = "Maschine:" + maschine;
     resultSpeak.innerHTML = "Result:" + checkWinner();
-}
+};
 
+//buttonclick function scissors
 document.getElementById('scissors').onclick = function buttonClick3(event) {
     player = scissorsBtn.textContent;
     maschineTurn();
     playerSpeak.innerHTML = "Player:" + player;
     maschineSpeak.innerHTML = "Maschine:" + maschine;
     resultSpeak.innerHTML = "Result:" + checkWinner();
-}
+};
 
+//buttonclick function lizard
 document.getElementById('lizard').onclick = function buttonClick4(event) {
     player = lizard.textContent;
     maschineTurn();
     playerSpeak.innerHTML = "Player:" + player;
     maschineSpeak.innerHTML = "Maschine:" + maschine;
     resultSpeak.innerHTML = "Result:" + checkWinner();
-}
+};
 
+//buttonclick function spock
 document.getElementById('spock').onclick = function buttonClick5(event) {
     player = spockBtn.textContent;
     maschineTurn();
     playerSpeak.innerHTML = "Player:" + player;
     maschineSpeak.innerHTML = "Maschine:" + maschine;
     resultSpeak.innerHTML = "Result:" + checkWinner();
-}
+};
 
-//maschineTurn function to automate maschine action
+//maschineTurn function to automate maschine action using Pattern Matching
 function maschineTurn() {
     let randNum = Math.floor(Math.random() * 5) + 1;
     switch (randNum) {
@@ -92,14 +93,24 @@ function checkWinner() {
         return "Draw!";
     } else if (maschine == "Rock") {
         return (player == "Paper") ? "You win!" : "You lose!";
+    } else if (maschine == "Rock") {
+        return (player == "Spock") ? "You win!" : "You lose!";
     } else if (maschine == "Paper") {
         return (player == "Scissors") ? "You win!" : "You lose!";
+    } else if (maschine == "Paper") {
+        return (player == "Lizard") ? "You win!" : "You lose!";
     } else if (maschine == "Scissors") {
         return (player == "Rock") ? "You win!" : "You lose!";
-    } else if (maschine == "Lizard") {
+    } else if (maschine == "Scissors") {
         return (player == "Spock") ? "You win!" : "You lose!";
+    } else if (maschine == "Lizard") {
+        return (player == "Scissors") ? "You win!" : "You lose!";
+    } else if (maschine == "Lizard") {
+        return (player == "rock") ? "You win!" : "You lose!";
     } else if (maschine == "Spock") {
-        return (player == "Rock") ? "You win!" : "You lose!";
+        return (player == "Paper") ? "You win!" : "You lose!";
+    } else if (maschine == "Spock") {
+        return (player == "Lizard") ? "You win!" : "You lose!";
     }
 }
 
