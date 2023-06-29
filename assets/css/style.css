@@ -44,9 +44,8 @@ body{
     font-family: cursive, sans-serif;
     border:2px solid;
     border-radius: 25px;
-    padding: 10px;
     position: absolute;
-    top:30%;
+    top:25%;
     background-color: lightblue;
     text-align: center;
     width:100%;
@@ -55,4 +54,24 @@ body{
     color: rgb(20, 4, 86);
 }
 
+@media only screen and (max-width: 600px) {
 
+    /* For mobile phones: */
+       #gamespot{
+        position: absolute;
+        height: 25%;
+        top: 30%;
+        font-size: small;
+       }
+
+       .header{
+        font-size: small;
+       }
+
+       .footer{
+        font-size: small;
+       }
+       h1{
+        margin: 0;
+       }
+    }
