@@ -1,6 +1,9 @@
 
 body{
     background-color: beige;
+    color:rgb(41, 41, 29);
+    font-family: cursive, sans-serif;
+    color: rgb(20, 4, 86);
     
 }
 
@@ -11,6 +14,8 @@ body{
     height:auto;
     width:100%;
     background-color: lightblue;
+    font-family: cursive, sans-serif;
+    color: rgb(20, 4, 86);
 }
 
 .footer{
@@ -21,12 +26,17 @@ body{
     bottom: 0;
     height: auto;
     text-align: center;
-    color:black;
+    color: rgb(20, 4, 86);
     background-color:lightblue;
+    font-family: cursive, sans-serif;
+}
+
+.choosebtns{
+    background-color:antiquewhite;
 }
 
 #gamespot{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: cursive, sans-serif;
     border:2px solid;
     border-radius: 25px;
     padding: 10px;
@@ -37,16 +47,7 @@ body{
     width:100%;
     height:auto;
     left: 0;
+    color: rgb(20, 4, 86);
 }
 
-#playerspeak{
-    color:red;
-}
 
-#maschinespeak {
-    color: blue;
-}
-
-#h1{
-    width:10%;
-}

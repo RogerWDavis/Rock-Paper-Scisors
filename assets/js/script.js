@@ -91,26 +91,54 @@ function maschineTurn() {
 function checkWinner() {
     if (player == maschine) {
         return "Draw!";
-    } else if (maschine == "Rock") {
-        return (player == "Paper") ? "You win!" : "You lose!";
-    } else if (maschine == "Rock") {
-        return (player == "Spock") ? "You win!" : "You lose!";
-    } else if (maschine == "Paper") {
-        return (player == "Scissors") ? "You win!" : "You lose!";
-    } else if (maschine == "Paper") {
-        return (player == "Lizard") ? "You win!" : "You lose!";
-    } else if (maschine == "Scissors") {
-        return (player == "Rock") ? "You win!" : "You lose!";
-    } else if (maschine == "Scissors") {
-        return (player == "Spock") ? "You win!" : "You lose!";
-    } else if (maschine == "Lizard") {
-        return (player == "Scissors") ? "You win!" : "You lose!";
-    } else if (maschine == "Lizard") {
-        return (player == "Rock") ? "You win!" : "You lose!";
-    } else if (maschine == "Spock") {
-        return (player == "Paper") ? "You win!" : "You lose!";
-    } else if (maschine == "Spock") {
-        return (player == "Lizard") ? "You win!" : "You lose!";
+    } else if (player == "Rock") {
+        if (maschine == "scissors") {
+            return "You win!";
+        }
+        else if (maschine == "Lizard") {
+            return "You win!";
+        } else if (maschine) {
+            return "Maschine wins!";
+        }
+    } else if (player == "Paper") {
+        if (maschine == "Rock") {
+            return "You win!";
+        }
+        else if (maschine == "Spock") {
+            return "You win!";
+        } else {
+            return "Maschine wins!";
+        }
+
+    } else if (player == "Scissors") {
+        if (maschine == "Paper") {
+            return "You win!";
+        }
+        else if (maschine == "Lizard") {
+            return "You win!";
+        } else {
+            return "Maschine wins!";
+        }
+
+    } else if (player == "Lizard") {
+        if (maschine == "Paper") {
+            return "You win!";
+        }
+        else if (maschine == "Spock") {
+            return "You win!";
+        } else {
+            return "Maschine wins!";
+        }
+
+    } else if (player == "Spock") {
+        if (maschine == "Rock") {
+            return "You win!";
+        }
+        else if (maschine == "Scissors") {
+            return "You win!";
+        } else {
+            return "Maschine wins!";
+        }
     }
 }
 
