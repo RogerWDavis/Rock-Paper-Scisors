@@ -1,0 +1,18 @@
+
+#gamespot{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border:2px solid;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: lightblue;
+    text-align: center;
+    width:100%;
+}
+
+#playerspeak{
+    color:red;
+}
+
+#maschinespeak {
+    color: blue;
+}
